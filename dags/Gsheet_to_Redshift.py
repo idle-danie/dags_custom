@@ -38,8 +38,8 @@ def copy_to_s3(**context):
 
 dag = DAG(
     dag_id="Gsheet_to_Redshift",
-    start_date=datetime(2021, 11, 27),  # 날짜가 미래인 경우 실행이 안됨
-    schedule="0 9 * * *",  # 적당히 조절
+    start_date=datetime(2024, 7, 12),
+    schedule="0 9 * * *",
     max_active_runs=1,
     max_active_tasks=2,
     catchup=False,
